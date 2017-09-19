@@ -53,6 +53,15 @@
               "id": "10d4d6b3-0b7a-40bf-8e79-4d087ef5b7be",
               "z": 2,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "title": "Fake credit card",
+                  "mitigation": "Validate card format and number"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
