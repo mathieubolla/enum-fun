@@ -10,7 +10,200 @@
       {
         "title": "WebModel",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 348,
+                "y": 68
+              },
+              "angle": 0,
+              "id": "af45117f-3dc7-4041-934a-eaf03eb1df58",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "login"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 37,
+                "y": 70
+              },
+              "angle": 0,
+              "id": "10d4d6b3-0b7a-40bf-8e79-4d087ef5b7be",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "user"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 595,
+                "y": 79
+              },
+              "angle": 0,
+              "id": "752ef16d-a38e-40cf-94cc-67e171576633",
+              "z": 3,
+              "hasOpenThreats": false,
+              "isEncrypted": false,
+              "storesCredentials": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "user_db"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "10d4d6b3-0b7a-40bf-8e79-4d087ef5b7be"
+              },
+              "target": {
+                "id": "af45117f-3dc7-4041-934a-eaf03eb1df58"
+              },
+              "vertices": [],
+              "id": "dd88ed9a-5148-423b-87c2-3a5a00be30eb",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "logs_in",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "af45117f-3dc7-4041-934a-eaf03eb1df58"
+              },
+              "target": {
+                "id": "752ef16d-a38e-40cf-94cc-67e171576633"
+              },
+              "vertices": [],
+              "id": "30b409ee-5bb9-4beb-8a1a-d8ae9840f19d",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "get_credentials",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 267,
+                "y": 16
+              },
+              "target": {
+                "x": 255,
+                "y": 245
+              },
+              "vertices": [
+                {
+                  "x": 298,
+                  "y": 111
+                }
+              ],
+              "id": "374d74a4-0be4-4468-aacd-95068d1ccef8",
+              "z": 6,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 550,
+                "y": 10
+              },
+              "target": {
+                "x": 518,
+                "y": 258
+              },
+              "vertices": [],
+              "id": "e12b517f-deab-4619-b447-d485cbfd6285",
+              "z": 7,
+              "attrs": {}
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 790
+        }
       }
     ],
     "reviewer": "Dimitri"
