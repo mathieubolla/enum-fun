@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "SampleWebAppModel",
+    "owner": "Mathieu",
+    "description": "Sample model"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "WebModel",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Dimitri"
+  }
+}
